@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif !important;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  background: linear-gradient(to bottom, #222222, #111111);
+  color: #fff;
+}
+
+/*
+ *  STYLE 2
+ */
+
+#style-2::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+#style-2::-webkit-scrollbar {
+  padding: 10px;
+  width: 12px;
+  background-color: #f4f4f4;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+  border: 3px solid #f4f4f4;
+}
+
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1em auto;
+  gap: 20px;
+}
+
+.card-movie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 250px;
+  border-radius: 20px;
+  transition: 0.2s all ease-in-out;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-movie:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.title-movie {
+  font-weight: bold;
+}
+
+.modal-movie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog {
+  margin: unset !important;
+  padding: 20px;
+}
+
+.modal-content {
+  width: 95vw !important;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title img {
+  width: inherit !important;
+}
+
+.card-img-top {
+  border-radius: 15px !important;
+}
+
+.modal-wrapper {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(#06cb72, #494a4a);
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.card-body {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 100vw;
+    margin: unset !important;
+    padding: 10px;
+  }
+
+  .modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-title {
+    width: 100%;
+    order: -1;
+  }
+
+  .modal-body h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .modal-title img {
+    width: inherit !important;
+  }
+}
+
+.carousel-item {
+  margin: 20px 0;
+  padding: 20px 0;
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.carousel-image {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.grid {
+  display: flex;
+  margin-left: 0.5px;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.card-img-top {
+  height: 60%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.pagination {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 10px 0;
+}
+
+.filter-section {
+  color: white;
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#filterLatestSwitch,
+#filterRatingSwitch,
+#sortByNameSwitch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.carousel-inner,
+.carousel-image,
+.carousel-container {
+  border-radius: 20px;
+}
+
+.horizontal-scroll {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.popular-movie-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 320px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: 0.2s all ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popular-movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.popular-movie-card img {
+  border-radius: 20px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.popular-movie-card .card-body {
+  padding: 10px;
+  height: unset;
+}
+
+.popular-movie-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  height: 20px;
+}
+
+.popular-movie-card .card-text {
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-link i {
+  margin-right: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* App.css */
+.navbar {
+  background: linear-gradient(45deg, #080808, #0f0f0f);
+}
